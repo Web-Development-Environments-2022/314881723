@@ -1,193 +1,296 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
-
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
-
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
+<link rel="stylesheet" type="text/css" href="style.css" />	
+<Script src="js/emojionearea.min.js"></Script>
+<script>
+  $(document).ready(function( ){
+    $(".content").click(function(){
+      let clickedBtnID = $(this).attr('id'); 
+        $("#About_box_"+clickedBtnID[10]).slideToggle();
+    });
 });
 </script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="ZUBkmjUh"></script>
+</head>
+<body>
+  <!-- Start 1 Section: Menu-->
+  <section id="menu">
+    <nav>
+    <ul id="topnav">
+    <li><a href="#About Me">About Me</a></li>
+    <li><a href="#Gallery">My Photos</a></li>
+    <li><a href="#Playlist">My Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR Code</a></li>
+    <li><a href="#Answer">Q&A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+    <li style="position:absolute; left:1040px; "><a href="https://www.facebook.com/yacov.mordechai"><i class="fa fa-facebook-official" ></i></a></li>
+    <li style="position:absolute; left:1070px; "><a href="https://www.instagram.com/yacovmordechai/?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a></li>
+    <li style="position:absolute; left:1100px; "><a href="https://www.instagram.com/yacovmordechai/?igshid=YmMyMTA2M2Y="><i class="fa fa-twitter"></i></a></li>
+    </ul>
+    </nav>
+  </section>
+  <!--End 1 Section: Menu-->
+  <!--********************************************-->
+
+<!--********************************************-->
+<!--Start section 2:Head_IMG-->
+<div class="container_h">
+  <div class="box_h">
+    <img src="Images\Head_1.jpg">
+  </div>
+  <div class="box_h">
+    <img src="Images\Head_2.jpg">
+    
+  </div>
+  <div class="box_h">
+    <img src="Images\Head_3.jpg">
+  </div>
+  <div class="box_h">
+    <img src="Images\Head_4.jpg">
+  </div>
+</div>
+<!--End section 2:Head_IMG-->
+  <!-- Start 3 Section: Quoate-->
+  <section id="quote">
+    <blockquote><img src="images/yacob_q.jpg"  id="yacob_quoate">
+      <p style="display: inline;">"Hard work, goal adherence, and determination are the formula for<br/> success- but the way to achieve the goals is the key to success."</p>
+      <footer >&mdash;<cite >Yacob Mordechai</cite> </footer>
+    </blockquote>
+  </section>
+<!-- End 3 Section: Quoate-->
+<!--********************************************-->
+<!-- Start 4 Section: About-->
+<section id="About Me" class="section">
+  <div class="heading-section">
+    <h2>About Me</h2>
+    <img src="Images/under-heading.png" >
+  <p>Here you can find a descreption about Yacov Mordechai life during the timline below</p>
+  <h2>Click on the Box to see more Information!</h2>
+</div>
+<div class ="AboutBlock">
+  <div class="timeline">
+    <div class="container left">
+      <div class="content" id="About_box_1_EH" >
+        
+        <h2>1950-1954</h2>
+        <div id="About_box_1" style="display: none;">
+          <img src="Images\about_1.jpg" style="width: 20%;float: left; margin-top:0px;margin-right:0px; margin-left: 0px; margin-right: 20px; ">
+        <p >Rachel and Menashe Yacob's parents immigrated from Iraq to Israel.
+          *Menashe lived in the Har Tov camp<br/>
+          *Rachel lived in Hatikva Quarter<br/>
+          They knew each other and got married in 1954.After the wedding they settled down in Hatikva Quartervs
+        </p>
+      </div>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content" id="About_box_2_EH">
+        <h2>1960</h2>
+        <div id="About_box_2" style="display: none;">
+        <img src="Images\about_2.jpg" style="width: 35%;float: left; margin-top:0px;margin-right:0px; margin-left: 0px; margin-right: 20px; ">
+        <p>Yacob was born.<br/>childhood memory: "a happy childhood, most of the day we play in the street and go a lot to the market that was identified with unique Iraqi food. At the end of the day-when was a game of Bnei Yehuda We went up to the neighbor's roof to watch the game."</p>
+      </div>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content" id="About_box_3_EH">
+        <h2>1973-1977</h2>
+        <div id="About_box_3" style="display: none;">
+        <p>During the Yom Kippur War, Yaakov was 13 years old. He remembers a mess in the streets and no one understood what was happening - "it was a huge chaos".<br/>
+          Yacob attended in Jewish educational institution until he was 14 years old. By this time he was also an apprentice in  the Working Youth.<br/>
+        He issued his matriculation certificate at Shevach School, after much effort and a lot of investment in studies</p>
+      </div>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content" id="About_box_4_EH">
+        <h2  >1978</h2>
+        <div id="About_box_4" style="display: none;" >
+        <img src="Images\about_4.jpg" style="width: 30%;float: left; margin-top:0px;margin-right:0px; margin-left: 0px; margin-right: 20px; ">
+        <p>Yacob enlisted in Israel Defense Forces in the Nahal Brigade  when he was 18 years old. He took part in a unique program in the core of Nahal, a combination with life on the kibbutz Hagoshrim. He was trained on a Tarkoker and worked in the kibbutz's agricultural fields in the 4th year of service
+      <br/>During the Galilee Peace War, Yacob was a medic in the Medical Battalion - treating the wounded at a field hospital established in Lebanon</p>
+    </div>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content" id="About_box_5_EH">
+        <h2>1983-1988</h2>
+        <div id="About_box_5" style="display: none;">
+        <img src="Images\about_5.jpg" style="width: 30%;float: left; margin-top:0px;margin-right:0px; margin-left: 0px; margin-right: 20px; ">
+        <p>Yacov lived 2 years in U.S.A-he traveled and work with friends from the military service.
+         When he came back to Israel he learned electronics and teaching studies in Ort singalovski . After he finish the specialization in teaching studies, he   started to teach at Makif Yehud High School-and he met the love of his life Shoshana Who later became his wife for life</p>
+      </div>
+      </div>
+    </div>
+    <div class="container right" >
+      <div class="content" id="About_box_6_EH">
+        <h2>2022</h2>
+        <div id="About_box_6" style="display: none;">
+          <img src="Images\about_6.jpg" style="width: 23%;float: left; margin-top:0px;margin-right:0px; margin-left: 0px; margin-right: 20px; ">
+        <p>These days Yaakov is a grandfather to 2 amazing grandchildren, a father to 3 children and he had 
+      experience of over 30 years in the field of teaching, which included, among other things, the management of a stratum of about 500 students and the management of the journey to Poland.</p>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- End 4 Section: About-->
+
+<!--********************************************-->
+<!-- Start 5 Section: Gallery-->
+<section id="Gallery" class="section">
+  <div class="heading-section">
+    <h2>my photos</h2>
+    <img src="Images/under-heading.png" >
+  <p>Here you can find Pictures throughout Yacov life</p>
+
+</div>
+
+<div class="grid-container">
+  <div>
+    <img class='grid-item' src="Images\Gallery_1.jpg">
+    <p></p>
+  </div>
+  <div>
+    <img class='grid-item ' src="Images\Gallery_2.jpg">
+    <p></p>
+  </div>
+  <div>
+    <img class='grid-item' src="Images\Gallery_3.jpg">
+    <p></p>
+  </div>
+  <div>
+    <img class='grid-item' src="Images\Gallery_4.jpg">
+    <p></p>
+  </div>
+  <div>
+    <img class='grid-item' src="Images\Gallery_5.jpg">
+    <p></p>
+  </div>
+  <div>
+  <img class='grid-item' src="Images\Gallery_6.jpg">
+  <p></p>
+</div>
+<div>
+  <img class='grid-item' src="Images\Gallery_7.jpg">
+  <p></p>
+</div>
+<div>
+  <img class='grid-item' src="Images\Gallery_8.jpg">
+  <p></p>
+</div>
+<div>
+  <img class='grid-item' src="Images\Gallery_9.jpg">
+  <p></p>
+</div>
+<div>
+  <img class='grid-item' src="Images\Gallery_10.jpg">
+  <p></p>
+</div>
+<div>
+  <img class='grid-item' src="Images\Gallery_11.jpg">
+  <p></p>
+</div>
+ 
+
+</div>
+</section>
+<!-- End 5 Section: Gallery-->
+<section id="Playlist" class="section">
+  <div class="heading-section">
+    <h2>My Playlist</h2>
+    <img src="Images/under-heading.png" >
+  <p>Here you can find Yacov favorite song</p>
+</div>  
+<iframe width="420" height="345" style="  display: block;margin-left: auto;margin-right: auto;" src="https://www.youtube.com/embed/fuFQrMxvvm0"></iframe> 
+  
+</iframe>
+</section>
+<!--********************************************-->
+<!-- Start 6 Section: like-->
+<section id="like" class="section">
+  <div class="heading-section">
+    <h2>like me</h2>
+    <img src="Images/under-heading.png" >
+  <p>Here you can share the website by using the Facebook</p>
+  <div class="fb-like"  data-href="https://web-development-environments-2022.github.io/assignment1-mordomer/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true" style="padding: 70px ;"></div>
+</div>
+
+  
+
+</section>
+<!-- End 6 Section: like-->
+<!--********************************************-->
+<!-- Start 7 Section: qrcoder-->
+<section id="qrcoder" class="section">
+<div class="heading-section">
+  <h2>Scan my Code</h2>
+  <img src="Images/under-heading.png" >
+<p></p>
+</div>
+<img src="Images/QR_Code.jpg" width="420" height="345" style="  display: block;margin-left: auto;margin-right: auto;">
+</section>
+<!-- End 7 Section: qrcoder-->
+<!--********************************************-->
+<!-- Start 8 Section: Answer-->
+<section id="Answer" class="section">
+  <div class="heading-section">
+    <h2>Answer</h2>
+    <img src="Images/under-heading.png" >
+  </div>
+  <div style="text-align: center;">
+    <h2 dir="rtl">שאלה 1:פרטו 3 הבדלים עיקריים בין W1,W2,W3.מומלץ בעברית אך לא חובה</h3>
+      <h3 dir="rtl">הבדל 1:(Read Only VS Read and Write)</h2>
+    <p dir="rtl">הבדל בין W1 לבין W1: W2 זוהי הגרסאה הראשונה של הWEB   -מדובר על גרסה מאוד סטטית שמאופיינת בעיקר שהיה ניתן לקרוא דברים בלבד ולא היה ניתן לכתוב תכנים חדשים-כלומר לשתף תכנים.</p>
+    <p dir="rtl">בשונה ממנה,בW2 כבר היה ניתן בנוסף לקריאה של תוכן , המשתמשים יכלו ליצור תוכן ולשתף אותו באינטרנט-מדובר בהתפתחות של הרשתות חברתיות למשל כמו פייסבוק וטוויטור</p>
+    <p dir="rtl">כלומר,משתמשים יכלו להקים אתרים בעצמם ולשתף ידע-מה שיצר סטנדרטים מסויימים אצל האתרים השונים</p>
+    <h3 dir="rtl">הבדל 2:(The Meta Data)</h2>
+    <p>ההבדל המהותי שמתבצע בווב 3  הוא השימוש במטה דאטה-קוצרים את חוכמת ההמונים באמצעות הטכנולוגיה של בינה מלכותית .שימוש בטכנולוגיה החדשה מאפשר להסיק מידע על המשתמשים ואז המידע למעשה שמוצג לכל משתמש ומשתמש זהו מידע שעבר עיבוד ואינדוקס</p>
+    <p>למעשה הרשת מנסה בשלב זה לא רק למצוא  מידע חדש למשתמש-אלא לאתר למשתמש את המידע הטוב ביותר שמתאים למשתמש ספציפי ולנתח ולהבין אותו</p>
+    <h3 dir="rtl">הבדל 3:(איך מתבצע פרסום התוכן ברשת) </h2>
+    <p dir="rtl">בווב 1-חברות מפרסמות תוכן שאנשים צורכים (למשל CNN)</p>
+    <p dir="rtl">אנשים מפרסמים תוכן שאנשים אחרים יכולים לצרוך, חברות בונות פלטפורמות שמאפשרות לאנשים לפרסם תוכן בשביל אנשים אחרים (למשל Flicker, Youtube, Adsence, ויקיפדיה) </p>
+    <p dir="rtl">אנשים בונים אפליקציות שלאנשים אחרים יכולה להיות אינטרקציה איתן, חברות בונות פלטפורמות שמאפשרות לאנשים לפרסם שירותים ע"י מינוף הקשר בין אנשים או תוכן מיוחד (כמו Facebook, Google-Maps, My Yahoo)</p>
+    <h2 dir="rtl"> שאלה 2:הסבירו את ההבדלים שצוינו בשאלה 1 על ידי דוגמה של תרחיש שימוש</h2>
+    <p dir="rtl">לדוגמא: חיפוש תוכן על המושג שנקרא משחק כדורגל.</p>
+
+      <P>בווב 1-חייבים להכניס את הכתובת  יו-אר-אל המדויקת של האתר שיכלול מידע על המושג משחק כדורגל.</P>
+      <P>בווב 2-ניתן לחפש במנוע חיפוש  את המושג כדורגל ותהליך התיוג הוא ידני, משעמם ומכסה אחוזים אפסיים מהווב. בנוסף , הווב מתייג הכל: תמונות, לינקים, אירועים, חדשות, בלוגים, אודיו, וידאו וכן הלאה-ללא שום סינון מסויים על סמך העדפות של המשתמש מהעבר.</P>
+      <P>בווב 3-כאשר נחפש במנוע החיפוש את המושג משחק כדורגל- החיפוש יהיה יותר מדיוק, כיוון שהתיוג יכול לפתור חלק מהדו-משמעות שצירופים ומילים נרדפות מייצרות בתוך תהליך החיפוש והשימוש בבינה מלכותית יציג למשתמש על סמך המטא דטה שנאסף עליו תוצאות שיותר מותאמות אליו ותכנים שיהיו יותר רלוונטיים אליו על סמך היסטוריית חיפושים שהוא ביצע בעבר. בנוסף החיפוש מסתמך גם על המיקום של אותו האדם-אם למשל אדם בארה"ב יבצע חיפוש של המושג כדורגל הוא יקבל תוצאות שיותר מותאמות אליו-בשונה לאדם באירופה שמבצע חיפוש על מושג הכדורגל.</P>
+
+
+    </ol>
+  </div>  
+</section>
+<!-- End 8 Section: Answer-->
+<!--********************************************-->
+<!-- Start 9 Section: Contact-->
+<section id="contact" class="section">
+  <div class="heading-section">
+    <h2>Contact Me</h2>
+    <img src="Images/under-heading.png" >
+  <p>Here you can to send an massage to yacov mail</p>
+</div>
+<div class="cont_contact">
+  <form action="mailto:omer2016@gmail.com" method="post"enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    E-mail:<br>
+    <input type="text" name="mail"><br>
+    Comment:<br>
+    <textarea id="example5">
+      
+      </textarea>
+       
+    <input type="submit" value="Send">
+    </form>
+</div>  
+</section>
+<!-- End 9 Section: Contact-->
 </body>
 </html>
