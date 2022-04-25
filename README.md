@@ -2,7 +2,9 @@ My full Name: Omer Mordechai
 
 ID: 314881723
 
-Website address:https://web-development-environments-2022.github.io/assignment1-mordomer/
+Moodle User Name:mordomer
+
+Website address:https://web-development-environments-2022.github.io/314881723/
 
 External libraries I used in the project:
 
