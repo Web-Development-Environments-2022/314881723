@@ -1,8 +1,5 @@
-My full Name: Omer Mordechai
+As a web developer Coures I Executed one page Portfolio website to my father.
 
-ID: 314881723
-
-Moodle User Name:mordomer
 
 Website address:https://web-development-environments-2022.github.io/314881723/
 
